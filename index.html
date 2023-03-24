@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/index.js" defer></script>
+    <title>Rock, Paper, Scissors Game</title>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h1 class="title-game">Choose and Start Your Game</h1>
+            <p>Enjoy it</p>
+        </div>
+        <div class="choises-btn">
+            <button class="btn" data-selection="rock">
+                <img src="images/rock.svg">
+            </button>
+            <button class="btn" data-selection="paper">
+                <img src="images/paper.svg">
+            </button>
+            <button class="btn" data-selection="scissors">
+                <img src="images/scissors.svg">
+            </button>
+        </div>
+        <div class="choises-box">
+            <div class="my-choose-box">
+                <h2>My chois is: </h2>
+                <p>my score: <span id="myScore">0</span></p>
+                <div class="my-chois-option" id="myChoisOption"></div>
+            </div>
+            <div class="computer-choose-box">
+                <h2>Computer chois is: </h2>
+                <p>computer score: <span id="computerScore">0</span></p>
+                <div class="computer-chois-option" id="computerChoisOption"></div>
+            </div>
+        </div>
+        <div class="result-box">
+            <h2>Result game:</h2>
+            <span id="result"></span>
+        </div>
+        
+    </div>
+</body>
+</html>

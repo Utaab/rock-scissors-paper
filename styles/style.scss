@@ -1,0 +1,95 @@
+/*-------------- CSS Reset*/
+body{
+    margin: 0;
+    padding: 0;
+    *{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .title{
+        text-align: center;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    
+    .choises-btn{
+        border-bottom: 1px solid #f1f1f1;
+        margin-bottom: 2rem;
+        button.btn {
+            width: 150px;
+            border: 3px solid #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px;
+            background: #f0f0f0;
+            transition: .3s all ease-in-out;
+            cursor: pointer;
+            &:focus{
+                border: 3px dashed #cbcbcb;
+            }
+        }
+    }
+
+    .result-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        h2{
+            font-size: 20px;
+        }
+        span{
+            width: 40px;
+            margin-left: 7px;
+            background: white;
+            padding: 15px 35px;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+        }
+    }
+
+    .choises-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 2rem;
+        div[class$="-choose-box"] p {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+            span {
+                width: 50px;
+                height: 50px;
+                background: #f0f0f0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                font-size: 22px;
+                margin-left: 14px;
+            }
+        }
+        div[class$="-chois-option"]{
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+        }
+    }
+    
+}
